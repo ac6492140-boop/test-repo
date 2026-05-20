@@ -15,7 +15,7 @@ jobs:
           curl -s "${{ github.event.inputs.url }}" > result.txt
           cat result.txt
       - name: Upload result
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: result
           path: result.txt
